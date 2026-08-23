@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>中医九种体质自测</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="page">
+    <header class="hero">
+      <div class="hero-inner">
+        <h1>中医九种体质自测</h1>
+        <p class="subtitle">依据《中医体质分类与判定》标准 · 辨体质 · 顺时养生</p>
+      </div>
+    </header>
+
+    <main class="container">
+      <!-- 欢迎页 -->
+      <section id="welcome" class="card active">
+        <h2>了解自己的体质，吃对每一餐</h2>
+        <p>中医将人体体质分为九种：平和质、气虚质、阳虚质、阴虚质、痰湿质、湿热质、血瘀质、气郁质、特禀质。不同体质在饮食、起居、运动、情绪调养上各有侧重。</p>
+        <p>本工具依据中华中医药学会《中医体质分类与判定》（ZYYXH/T157-2009）标准设计，共 67 题，约需 5–8 分钟完成。</p>
+        <div class="notice">
+          <strong>说明：</strong>本测试结果仅供日常养生参考，不能替代医学诊断。如有明显不适，请及时就医。
+        </div>
+        <div class="actions">
+          <button id="startBtn" class="btn btn-primary">开始自测</button>
+        </div>
+      </section>
+
+      <!-- 测试页 -->
+      <section id="quiz" class="card">
+        <div class="quiz-header">
+          <div class="progress-wrap">
+            <div class="progress-bar" id="progressBar"></div>
+          </div>
+          <div class="quiz-meta">
+            <span id="sectionName">平和质</span>
+            <span id="questionCounter">1 / 67</span>
+          </div>
+        </div>
+        <div id="questionBox" class="question-box"></div>
+        <div class="quiz-nav">
+          <button id="prevBtn" class="btn btn-secondary" disabled>上一题</button>
+          <button id="nextBtn" class="btn btn-primary" disabled>下一题</button>
+        </div>
+      </section>
+
+      <!-- 结果页 -->
+      <section id="result" class="card">
+        <h2>您的体质测评结果</h2>
+        <div id="resultSummary" class="result-summary"></div>
+        <div id="constitutionCards" class="constitution-cards"></div>
+        <div class="actions">
+          <button id="restartBtn" class="btn btn-primary">重新测试</button>
+          <button id="printBtn" class="btn btn-secondary">打印 / 保存 PDF</button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© 2026 二十四节气顺时药膳全书 · 中医体质自测工具</p>
+    </footer>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
